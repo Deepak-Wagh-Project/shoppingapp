@@ -13,7 +13,7 @@ const App=()=>{
      <Navbar/>
      <CallPage setItems={setItems}/>
        <Routes>
-       <Route path="" element={<Homepage  items={items}setCartItems={setCartItems} cartItems={cartItems} setSuccess={setSuccess}/>}/>
+       <Route path="/shoppingapp/" element={<Homepage  items={items}setCartItems={setCartItems} cartItems={cartItems} setSuccess={setSuccess}/>}/>
            <Route path="/home" element={<Homepage  items={items}setCartItems={setCartItems} cartItems={cartItems} setSuccess={setSuccess}/>}/>
            <Route path="cart" element={<Cartpage cartItems={cartItems} setCartItems={setCartItems} setSuccess={setSuccess} success={success}/>}/>
 
