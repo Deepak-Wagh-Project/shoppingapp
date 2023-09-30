@@ -15,14 +15,14 @@ const Checkoutlist=({cartItems,setCartItems,setSuccess})=>{
        {
         cartItems&&cartItems.map((item)=>(
             <div className="checkout-items"><p>{item.title}</p>
-            <p>{item.price}</p></div>
+            <p>${item.price}</p></div>
             
 
 
         ))
        }{
         <div  className="checkout-items total"><p>Total:</p>
-        <p>{total}</p></div>
+        <p>${total}</p></div>
        }
        <button className="checkout-btn" onClick={checkOutFromApp}>Click To Checkout</button>
     </div>

@@ -82,3 +82,14 @@ img{
   justify-content: center;
   margin: 30px;
 }
+a{
+  text-decoration: none;
+  color:white;
+}
+@media screen and (min-width:320px) and (max-width:480px) {
+  .item-container{
+    display: grid;
+    grid-template-columns: 90%;
+    gap:20px 30px;
+  }
+}
