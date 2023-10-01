@@ -12,6 +12,10 @@ const App=()=>{
   return(<div>
      <Navbar/>
      <CallPage setItems={setItems}/>
+     {useEffect(()=>
+     <Homepage  items={items}setCartItems={setCartItems} cartItems={cartItems} setSuccess={setSuccess}/>
+     ,[])}
+    
      
        <Routes>
        

@@ -92,4 +92,23 @@ a{
     grid-template-columns: 90%;
     gap:20px 30px;
   }
+  .navbar{
+    height:60px;
+  }
+  .container{
+    display: grid;
+   grid-template-columns: 54% 38%;
+   column-gap: 4%;
+   
+  
+  }
+  .cart-items-container{
+    display: grid;
+    grid-template-columns: 98%;
+   
+    row-gap: 5%;
+  }
+  .checkoutlist-container{
+    height: fit-content;
+  }
 }
