@@ -12,14 +12,12 @@ const App=()=>{
   return(<div>
      <Navbar/>
      <CallPage setItems={setItems}/>
-     {useEffect(()=>
-     <Homepage  items={items}setCartItems={setCartItems} cartItems={cartItems} setSuccess={setSuccess}/>
-     ,[])}
+     
     
      
        <Routes>
        
-           <Route path="/home" element={<Homepage  items={items}setCartItems={setCartItems} cartItems={cartItems} setSuccess={setSuccess}/>}/>
+           <Route path="" element={<Homepage  items={items}setCartItems={setCartItems} cartItems={cartItems} setSuccess={setSuccess}/>}/>
            <Route path="cart" element={<Cartpage cartItems={cartItems} setCartItems={setCartItems} setSuccess={setSuccess} success={success}/>}/>
 
        </Routes>
