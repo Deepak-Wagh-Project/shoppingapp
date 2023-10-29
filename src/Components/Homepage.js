@@ -1,6 +1,7 @@
 
 import React ,{useState,useEffect}from "react";
 import axios from "axios";
+import Navbar from "./Navbar";
 
   
 
@@ -33,7 +34,9 @@ const Homepage=({items,setCartItems,cartItems,setSuccess})=>{
        
   
    
-    return(<div><h1>All items</h1>
+    return(<div>
+        <Navbar/>
+      <h1>All items</h1>
     <div className="item-container">
     {
         items&&items.map(item=>(

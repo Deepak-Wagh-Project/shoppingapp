@@ -1,6 +1,7 @@
 import { hover } from "@testing-library/user-event/dist/hover";
 import React from "react";
 import Checkoutlist from "./Checkoutlist"
+import Navbar from "./Navbar";
 
 
 const Cartpage=({cartItems,setCartItems,setSuccess,success})=>{
@@ -10,6 +11,8 @@ const Cartpage=({cartItems,setCartItems,setSuccess,success})=>{
         setCartItems(arr);
     }
     return(<div className="cartpage">
+
+<Navbar/>
         { success ? <div className="success-transaction">{success}</div>: cartItems.length===0 ?<div className="empty-messsage">Your cart is empty.Please add some products</div> :
         <div>
         <h1>My Cart</h1>
